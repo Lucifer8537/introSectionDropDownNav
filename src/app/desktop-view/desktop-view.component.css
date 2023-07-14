@@ -1,0 +1,153 @@
+.container {
+  width: 84%;
+  padding: 2% 8% 0% 8%;
+  position: relative;
+  overflow: hidden;
+}
+
+.header {
+  justify-content: space-between;
+}
+
+.snap-container {
+  margin-right: 25%;
+}
+
+.snap {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.drop-down {
+  margin-right: 15%;
+  color: hsl(0, 0%, 41%);
+  cursor: pointer;
+}
+
+.drop-down:hover {
+  color: black;
+}
+
+.btn {
+  margin-right: 30%;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: black;
+}
+
+.header-right {
+  margin-right: 3%;
+  color: hsl(0, 0%, 41%);
+}
+
+.register {
+  background-color: white;
+  border-radius: 10px;
+  padding: 8%;
+  border: 2px solid hsl(0, 0%, 41%);
+  color: hsl(0, 0%, 41%);
+}
+
+.register:hover {
+  border-color: black;
+  color: black;
+}
+
+.img {
+  margin-left: 3px;
+}
+
+.arrow {
+  margin-bottom: 2px;
+}
+
+.dropdown-content {
+  position: absolute;
+  background-color: #f9f9f9;
+  margin-top: 30px;
+  width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  margin-right: auto;
+  padding: 20px 20px 0px 20px;
+  grid-template-columns: repeat(1, min-content) repeat(1, auto);
+  left: 200px;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.item {
+  margin-top: 15px;
+}
+.icon-img {
+}
+.icon-label {
+  margin-right: auto;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+.dropdown-content-company {
+  position: absolute;
+  background-color: #f9f9f9;
+  margin-top: 30px;
+  width: fit-content;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  padding: 20px 20px 0px 20px;
+  left: 400px;
+}
+
+.desktop-content {
+  padding: 0px 70px 2px 160px;
+}
+
+.mark-remote {
+  font-size: 70px;
+  font-weight: 700;
+}
+
+.make-remote-content {
+  margin-top: 175px;
+  padding-right: 150px;
+}
+
+.hero-desktop {
+  width: 450px;
+}
+
+.mark-content {
+  font-size: 18px;
+  color: hsl(0, 0%, 41%);
+}
+
+.learn-more {
+  width: 130px;
+  height: 47px;
+  font-size: 18px;
+  background-color: black;
+  color: white;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.learn-more:hover {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+}
+
+.icon-bottom {
+  height: 20px;
+  margin-right: 25px;
+}
+
+.audio-phile {
+  height: 30px;
+}
+
+.icon {
+  margin-top: 20px;
+}

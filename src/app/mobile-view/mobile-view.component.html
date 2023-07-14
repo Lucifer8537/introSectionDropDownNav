@@ -1,0 +1,96 @@
+<div *ngIf="sideNav" class="menu">
+  <div class="close-container">
+    <img
+      src="../../assets/icon-close-menu.svg"
+      alt="close menu"
+      class="close"
+      (click)="onClickMenu()"
+    />
+  </div>
+  <div class="drop flex" (click)="onFeatureCheck()">
+    <span class="dropdown">{{ Label.FEATURE }}</span>
+    <ng-container *ngIf="feature"
+      ><img class="arrow" src="../../assets/icon-arrow-up.svg" alt="arrow up"
+    /></ng-container>
+    <ng-container *ngIf="!feature">
+      <img
+        class="arrow"
+        src="../../assets/icon-arrow-down.svg"
+        alt="arrow down"
+      />
+    </ng-container>
+  </div>
+  <ng-container *ngIf="feature"
+    ><div class="submenu-feature grid">
+      <img src="../../assets/icon-todo.svg" alt="todo" />
+      <span class="submenu-feature-span gap-b">{{ Label.TODO }}</span>
+      <img src="../../assets/icon-calendar.svg" alt="calendar" />
+      <span class="submenu-feature-span gap-b">{{ Label.CALENDAR }}</span>
+      <img src="../../assets/icon-reminders.svg" alt="reminders" />
+      <span class="submenu-feature-span gap-b">{{ Label.REMINDERS }}</span>
+      <img src="../../assets/icon-planning.svg" alt="planning" />
+      <span class="submenu-feature-span">{{ Label.PLANNING }}</span>
+    </div></ng-container
+  >
+  <div class="drop flex" (click)="onCompanyCheck()">
+    <span class="dropdown">{{ Label.COMPANY }}</span>
+    <ng-container *ngIf="company">
+      <img class="arrow" src="../../assets/icon-arrow-up.svg" alt="arrow up" />
+    </ng-container>
+    <ng-container *ngIf="!company"
+      ><img
+        class="arrow"
+        src="../../assets/icon-arrow-down.svg"
+        alt="arrow down"
+    /></ng-container>
+  </div>
+  <ng-container *ngIf="company">
+    <div class="grid submenu-company">
+      <span class="submenu-company-span gap-b">{{ Label.HISTORY }}</span>
+      <span class="submenu-company-span gap-b">{{ Label.OUR_TEAM }}</span>
+      <span class="submenu-company-span">{{ Label.BLOG }}</span>
+    </div>
+  </ng-container>
+  <div class="drop">
+    <span>{{ Label.CAREERS }}</span>
+  </div>
+  <div class="drop">
+    <span>{{ Label.ABOUT }}</span>
+  </div>
+</div>
+
+<div [ngClass]="{ fixed: sideNav }" class="container grid">
+  <div class="flex header">
+    <div class="logo">{{ Label.SNAP }}</div>
+    <div class="menu-icon-container" (click)="onClickMenu()">
+      <img src="../../assets/icon-menu.svg" alt="icon menu" />
+    </div>
+  </div>
+  <div class="mob-content grid">
+    <img
+      class="hero-mobile"
+      src="../../assets/image-hero-mobile.png"
+      alt="image hero mobile"
+    />
+    <div class="mob-make-remote-container grid">
+      <span class="mob-mark-remote">{{ Label.MAKE_REMOTE_WORK }}</span>
+      <span class="mob-mark-content">{{ Label.CONTENT }}</span>
+      <button class="mob-learn-more">{{ Label.LEARN_MORE }}</button>
+      <div class="icon-footer flex">
+        <img src="../../assets/client-databiz.svg" alt="databiz" class="icon" />
+        <img
+          src="../../assets/client-audiophile.svg"
+          alt="audio-phile"
+          class="icon-change"
+        />
+        <img src="../../assets/client-meet.svg" alt="meet" class="icon" />
+        <img
+          src="../../assets/client-maker.svg"
+          alt="maker"
+          class="icon-change"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+<div *ngIf="sideNav" class="backdrop"></div>

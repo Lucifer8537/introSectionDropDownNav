@@ -1,0 +1,139 @@
+<div class="container grid">
+  <div class="header flex center">
+    <div class="header-left flex center">
+      <div class="snap-container">
+        <span class="snap">{{ Label.SNAP }}</span>
+      </div>
+      <div class="flex">
+        <div class="drop-down flex">
+          <div class="flex" (click)="onFeatureCheck()">
+            <div>
+              <span id="feature"> {{ Label.FEATURE }} </span>
+            </div>
+            <div class="img">
+              <ng-container *ngIf="!feature">
+                <img
+                  src="../../assets/icon-arrow-down.svg"
+                  alt="icon-arrow-down"
+                  class="arrow"
+                />
+              </ng-container>
+              <ng-container *ngIf="feature">
+                <img
+                  src="../../assets/icon-arrow-up.svg"
+                  alt="icon-arrow-up"
+                  class="arrow"
+                />
+              </ng-container>
+            </div>
+          </div>
+          <ng-container *ngIf="feature">
+            <div class="dropdown-content grid">
+              <img
+                class="icon-img"
+                src="../../assets/icon-todo.svg"
+                alt="todo"
+              />
+              <span class="icon-label">{{ Label.TODO }}</span>
+
+              <img
+                class="icon-img"
+                src="../../assets/icon-calendar.svg"
+                alt="calendar"
+              />
+              <span class="icon-label">{{ Label.CALENDAR }}</span>
+
+              <img
+                class="icon-img"
+                src="../../assets/icon-reminders.svg"
+                alt="reminders"
+              />
+              <span class="icon-label">{{ Label.REMINDERS }}</span>
+
+              <img
+                class="icon-img"
+                src="../../assets/icon-planning.svg"
+                alt="planning"
+              />
+              <span class="icon-label">{{ Label.PLANNING }}</span>
+            </div></ng-container
+          >
+        </div>
+        <div class="drop-down flex">
+          <div class="flex" (click)="onCompanyCheck()">
+            <div>
+              <span id="company">{{ Label.COMPANY }}</span>
+            </div>
+            <div class="img">
+              <ng-container *ngIf="!company"
+                ><img
+                  src="../../assets/icon-arrow-down.svg"
+                  alt="icon-arrow-down"
+                  class="arrow"
+              /></ng-container>
+              <ng-container *ngIf="company"
+                ><img
+                  src="../../assets/icon-arrow-up.svg"
+                  alt="icon-arrow-up"
+                  class="arrow"
+              /></ng-container>
+            </div>
+          </div>
+          <ng-container *ngIf="company">
+            <div class="dropdown-content-company grid">
+              <span class="icon-label">{{ Label.HISTORY }}</span>
+              <span class="icon-label">{{ Label.OUR_TEAM }}</span>
+              <span class="icon-label">{{ Label.BLOG }}</span>
+            </div>
+          </ng-container>
+        </div>
+        <div class="drop-down">
+          <span>{{ Label.CAREERS }}</span>
+        </div>
+        <div class="drop-down">
+          <span>{{ Label.ABOUT }}</span>
+        </div>
+      </div>
+    </div>
+    <div class="header-right flex center">
+      <span class="btn">{{ Label.LOGIN }}</span>
+      <button class="btn register">{{ Label.REGISTER }}</button>
+    </div>
+  </div>
+  <div class="flex desktop-content">
+    <div class="grid make-remote-content">
+      <span class="mark-remote">{{ Label.MAKE_REMOTE_WORK }}</span>
+      <span class="mark-content">{{ Label.CONTENT }}</span>
+      <button class="learn-more">{{ Label.LEARN_MORE }}</button>
+      <div class="flex icon">
+        <img
+          class="icon-bottom"
+          src="../../assets/client-databiz.svg"
+          alt="databiz"
+        />
+        <img
+          class="icon-bottom audio-phile"
+          src="../../assets/client-audiophile.svg"
+          alt="audiophile"
+        />
+        <img
+          class="icon-bottom"
+          src="../../assets/client-meet.svg"
+          alt="meet"
+        />
+        <img
+          class="icon-bottom"
+          src="../../assets/client-maker.svg"
+          alt="maker"
+        />
+      </div>
+    </div>
+    <div class="img-container">
+      <img
+        src="../../assets/image-hero-desktop.png"
+        alt="hero-desktop"
+        class="hero-desktop"
+      />
+    </div>
+  </div>
+</div>

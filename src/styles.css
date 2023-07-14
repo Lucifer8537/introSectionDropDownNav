@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "Epilogue";
+
+  src: url("../src/fonts/Epilogue-VariableFont_wght.ttf"),
+    url("../src/fonts/Epilogue-Italic-VariableFont_wght.ttf");
+}
+
+.grid {
+  display: grid;
+}
+
+.flex {
+  display: flex;
+}
+
+body {
+  margin: 0;
+  font-family: "Epilogue";
+}
+
+.center {
+  align-items: center;
+}
+
+.fixed {
+  position: fixed;
+}

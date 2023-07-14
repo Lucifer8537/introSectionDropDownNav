@@ -1,0 +1,20 @@
+export const LABEL = {
+  SNAP: 'snap',
+  FEATURE: 'Features',
+  COMPANY: 'Company',
+  CAREERS: 'Careers',
+  ABOUT: 'About',
+  LOGIN: 'Login',
+  REGISTER: 'Register',
+  TODO: 'Todo List',
+  CALENDAR: 'Calendar',
+  REMINDERS: 'Reminders',
+  PLANNING: 'Planning',
+  HISTORY: 'History',
+  OUR_TEAM: 'Our Team',
+  BLOG: 'Blog',
+  MAKE_REMOTE_WORK: 'Make remote work',
+  CONTENT:
+    'Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.',
+  LEARN_MORE: 'Learn more',
+};
